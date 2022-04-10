@@ -822,7 +822,27 @@ footer {
   }
   /* Estitulo ERROR PC - Nueva rama "animaciones" */
   .error__main {
-    background-color: black;
-    color: white;
+    background: rgb(193, 228, 240);
+    background: linear-gradient(180deg, rgba(193, 228, 240, 1) 0%, rgba(250, 248, 240, 1) 82%, rgba(228, 222, 210, 1) 93%);
+  }
+  .error__img {
+    animation: girar 2s ease-in 2s infinite;
+  }
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
   }
 }
