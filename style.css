@@ -820,4 +820,9 @@ footer {
     width: 65%;
     margin-top: 0.5rem;
   }
+  /* Estitulo ERROR PC - Nueva rama "animaciones" */
+  .error__main {
+    background-color: black;
+    color: white;
+  }
 }
