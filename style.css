@@ -1,0 +1,823 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background-color: #faf8f0;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+img {
+  width: 5rem;
+}
+header {
+  background-color: #c1e4f0;
+  position: sticky;
+  top: 0;
+}
+main {
+  background-color: #faf8f0;
+}
+footer {
+  background-color: #e4ded2;
+  padding: 1rem 0 1rem 0;
+}
+.centrado {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.contenido__titulo {
+  padding: 0.5rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+}
+.contenido__titulo--otros {
+  /* padding: 0.5rem; */
+  text-align: center;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Grid general*/
+.grid__contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+}
+.gridItem__header {
+  grid-area: header;
+}
+.gridItem__main {
+  grid-area: main;
+  padding: 0.5rem;
+}
+.gridItem__footer {
+  grid-area: footer;
+}
+
+/* Estilo Header MOBILE */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.menu ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.menu__paginas a {
+  text-decoration: none;
+  color: black;
+}
+.menu__iconos {
+  display: flex;
+}
+.menu__iconos li {
+  padding: 0 0.5rem;
+}
+.menu__iconos img {
+  width: 1.5rem;
+}
+/* Estilo FOOTER MOBILE */
+.footer__botones {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.footer__botones li {
+  text-transform: uppercase;
+  list-style-type: none;
+}
+.footer__botones a {
+  display: grid;
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+}
+.footer__newsletterRedes {
+  display: flex;
+  flex-flow: column;
+  width: 80%;
+  margin: auto;
+}
+.newsletter__suscribirse {
+  width: 99%;
+  height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background: transparent;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 0.5rem;
+}
+.newsletter__enviar {
+  width: 100%;
+  height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  margin: 0.3rem 0rem;
+  border-radius: 0.5rem;
+}
+.newsletter__enviar:hover {
+  background-color: white;
+  color: black;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redes ul {
+  display: flex;
+
+  padding: 0.5rem;
+}
+.redes p {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+.redes li {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  list-style: none;
+}
+.redes img {
+  width: 2rem;
+}
+.derechos {
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+/* grid INDEX MOBILE*/
+.grid__contenedor--index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header--index"
+    "banner--index"
+    "main--index"
+    "footer--index";
+}
+.gridItem__header--index {
+  grid-area: header--index;
+}
+.gridItem__banner--index {
+  grid-area: banner--index;
+}
+.gridItem__main--index {
+  grid-area: main--index;
+}
+.gridItem__footer--index {
+  grid-area: footer--index;
+}
+.banner {
+  width: 100%;
+}
+.gridFotox2 {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.3rem 0rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "foto1"
+    "foto2";
+}
+.grid__Foto1 {
+  grid-area: foto1;
+}
+.grid__Foto2 {
+  grid-area: foto2;
+}
+.colFotox2 img {
+  width: 100%;
+}
+.colFotox4 img {
+  width: 100%;
+}
+.colFotoGaleria img {
+  width: 100%;
+}
+.colFotoGrande img {
+  width: 100%;
+}
+.gridFotox4 {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: auto;
+  gap: 0.3rem;
+  padding: 0.3rem 0rem;
+}
+.tituloSeccion p {
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+
+/* Grid Mujer, Hombre, NIños, Promo MOBILE */
+.fila {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.tarjeta {
+  max-width: 18rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  text-align: center;
+  background-color: white;
+}
+.tarjeta__imagen {
+  width: 100%;
+}
+.infoProductoDescripcion {
+  display: flex;
+}
+.infoProductoDescripcion__precio {
+  width: 50%;
+}
+.infoProductoDescripcion__talle {
+  width: 50%;
+}
+/* Estilo Cobertura y como Comprar MOBILE */
+.fila--cobertura {
+  display: flex;
+  flex-flow: column;
+}
+.cobertura__mapa {
+  width: 95%;
+  margin: auto;
+  height: 15rem;
+  padding: 0.5rem;
+}
+.cobertura__info {
+  padding: 0.5rem;
+}
+.comoComprar__info {
+  padding: 0.5rem;
+}
+.comoComprar__video {
+  width: 95%;
+  margin: auto;
+  padding: 0.5rem;
+}
+/* Grid CARRITO MOBILE */
+.gridTitulo {
+  display: none;
+}
+.gridPedido {
+  display: grid;
+  width: 65%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "producto__descripcion producto__descripcion"
+    "grid__ptd grid__ptd";
+}
+.producto__descripcion {
+  grid-area: producto__descripcion;
+}
+.grid__ptd {
+  grid-area: grid__ptd;
+}
+/* Grid Producto  */
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.bnt__sacarOsumar {
+  font-weight: 500;
+  width: 1.7rem;
+  background: transparent;
+  border-radius: 0.5rem;
+  border: 0.01rem solid;
+}
+.grid__ptd {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "pti__talle pdi__talle"
+    "pti__color pdi__color"
+    "pti__precio pdi__precio"
+    "pti__cantidad pdi__cantidad";
+}
+.pti__talle {
+  grid-area: pti__talle;
+}
+.pti__color {
+  grid-area: pti__color;
+}
+.pti__precio {
+  grid-area: pti__precio;
+}
+.pti__cantidad {
+  grid-area: pti__cantidad;
+}
+.pdi__talle {
+  grid-area: pdi__talle;
+}
+.pdi__color {
+  grid-area: pdi__color;
+}
+.pdi__precio {
+  grid-area: pdi__precio;
+}
+.pdi__cantidad {
+  grid-area: pdi__cantidad;
+}
+.grid__formCarrito {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: auto auto auto;
+  text-align: end;
+  gap: 0.5rem;
+  grid-template-areas:
+    "formCarrito__tituloResumen formCarrito__tituloResumen "
+    "formCarrito__tituloZonas formCarrito__Zonas"
+    "formCarrito__tituloFechas formCarrito__Fechas"
+    "formCarrito__tituloTotal formCarrito__Total"
+    "formCarrito__tituloTotal formCarrito__Comprar";
+}
+.formCarrito__tituloResumen {
+  grid-area: formCarrito__tituloResumen;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+.formCarrito__tituloZonas {
+  grid-area: formCarrito__tituloZonas;
+}
+.formCarrito__Zonas {
+  grid-area: formCarrito__Zonas;
+}
+.formCarrito__tituloFechas {
+  grid-area: formCarrito__tituloFechas;
+}
+.formCarrito__Fechas {
+  grid-area: formCarrito__Fechas;
+}
+.formCarrito__tituloTotal {
+  grid-area: formCarrito__tituloTotal;
+
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.formCarrito__Total {
+  grid-area: formCarrito__Total;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.formCarrito__Comprar {
+  grid-area: formCarrito__Comprar;
+  text-transform: uppercase;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+
+.pedido {
+  display: flex;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  justify-content: space-between;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.pedido__foto {
+  width: 30%;
+}
+.pedido__foto img {
+  width: 100%;
+}
+/* estilo Contacto MOBILE */
+.formcontacto {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+}
+
+.formContacto_titulo {
+  display: flex;
+  flex-flow: row;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.formContacto__campo {
+  width: 100%;
+  height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px black;
+}
+.formContacto__mensaje {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: solid 1px #000000;
+}
+.formContacto__enviar {
+  margin-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  width: 100%;
+  height: 2rem;
+  color: white;
+  background-color: black;
+  border-radius: 0.5rem;
+}
+.formContacto__texto {
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem;
+}
+.error {
+  text-align: center;
+}
+.error img {
+  width: 50%;
+}
+/* Comienza estilos para Table */
+@media screen and (min-width: 768px) {
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+  /* esitilo FOOTER TABLET */
+  .menu {
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu__paginas ul {
+    display: flex;
+  }
+  .menu__paginas li {
+    padding: 0 0.5rem;
+  }
+  /* estilo FOOTER TABLET */
+  .footer__newsletterRedes {
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+  .redes {
+    display: flex;
+    width: 40%;
+  }
+  .redes ul {
+    justify-content: space-between;
+    width: 8rem;
+  }
+  .newsletter__suscribirse {
+    width: 70%;
+  }
+  .newsletter__enviar {
+    margin: 0rem;
+    width: 25%;
+  }
+  /* estilo INDEX TABLET */
+  .gridIndex {
+    width: 90%;
+    margin: auto;
+  }
+  .gridGaleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem;
+  }
+  .colFotox2 {
+    padding: 0;
+  }
+  .seccionCompartida {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem;
+    padding: 1rem 0;
+  }
+  .colFotox4 {
+    padding: 0;
+  }
+  .tituloSeccion p {
+    font-weight: 200;
+    font-size: 4.5rem;
+    letter-spacing: 0.2rem;
+  }
+  /* estilo Hombre, Mujer, Chicos y Promo TABLET */
+  .fila {
+    flex-flow: row wrap;
+    min-width: 720px;
+  }
+  /* estilo Cobertura y Compras TABLET*/
+  .gridCobertura {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "itemTitulo itemTitulo"
+      "itemMapa itemInfo";
+  }
+  .cobertura__titulo {
+    grid-area: itemTitulo;
+  }
+  .cobertura__mapa {
+    grid-area: itemMapa;
+  }
+  .cobertura__info {
+    grid-area: itemInfo;
+  }
+  .gridComprar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "comprar__titulo comprar__titulo"
+      "comprar__info comprar__video";
+  }
+  .comprar__titulo {
+    grid-area: comprar__titulo;
+  }
+  .comprar__video {
+    grid-area: comprar__video;
+  }
+  .comprar__info {
+    grid-area: comprar__info;
+  }
+  /* estilo CONTACTO TABLET */
+  .formContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas:
+      "form__nombre form__apellido"
+      "nombre apellido"
+      "form__email form__telefono"
+      "email telefono"
+      "form__mensaje form__mensaje"
+      "mensaje mensaje"
+      "form__enviar .";
+  }
+  #form__nombre {
+    grid-area: form__nombre;
+  }
+  #form__apellido {
+    grid-area: form__apellido;
+  }
+  #form__email {
+    grid-area: form__email;
+  }
+  #form__telefono {
+    grid-area: form__telefono;
+  }
+  #form__mensaje {
+    grid-area: form__mensaje;
+  }
+  #nombre {
+    grid-area: nombre;
+  }
+  #apellido {
+    grid-area: apellido;
+  }
+  #email {
+    grid-area: email;
+  }
+  #telefono {
+    grid-area: telefono;
+  }
+  #mensaje {
+    grid-area: mensaje;
+  }
+  #form__enviar {
+    grid-area: form__enviar;
+  }
+  .formContenedor {
+    background-color: white;
+    padding: 2rem;
+    width: 75%;
+    margin: auto;
+  }
+
+  /* estilo CARRITO TABLET */
+  .titulo--ocultar {
+    display: none;
+  }
+  .gridCarrito {
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "itemTitulo ."
+      "gridTitulo itemEntrega"
+      "itemPedido itemEntrega"
+      "itemPedido2 itemEntrega";
+  }
+  .itemTitulo {
+    grid-area: itemTitulo;
+  }
+  .gridTitulo {
+    grid-area: gridTitulo;
+  }
+  .itemEntrega {
+    grid-area: itemEntrega;
+  }
+  .itemPedido {
+    grid-area: itemPedido;
+  }
+  .itemPedido2 {
+    grid-area: itemPedido2;
+  }
+  /* gridTitulos */
+  .gridTitulo {
+    display: grid;
+    padding-top: 0.5rem;
+    text-align: center;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "itemTitulo__producto itemTitulo__talle itemTitulo__color itemTitulo__precio itemTitulo__cantidad";
+  }
+  .itemTitulo__producto {
+    grid-area: itemTitulo__producto;
+  }
+  .itemTitulo__talle {
+    grid-area: itemTitulo__talle;
+  }
+  .itemTitulo__color {
+    grid-area: itemTitulo__color;
+  }
+  .itemTitulo__precio {
+    grid-area: itemTitulo__precio;
+  }
+  .itemTitulo__cantidad {
+    grid-area: itemTitulo__cantidad;
+  }
+  /* grid Descripcionm Info del producto */
+  .gridPedido {
+    display: grid;
+    align-items: center;
+    width: 80%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "itemDescripcion itemInfo";
+  }
+  .itemDescripcion {
+    grid-area: itemDescripcion;
+  }
+  .itemInfo {
+    grid-area: itemInfo;
+  }
+  /* grid Info producto */
+  .grid__ptd {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-areas: "pdi__talle pdi__color pdi__precio pdi__cantidad";
+  }
+
+  .pdi__talle {
+    grid-area: pdi__talle;
+  }
+  .pdi__color {
+    grid-area: pdi__color;
+  }
+  .pdi__precio {
+    grid-area: pdi__precio;
+  }
+  .pdi__cantidad {
+    grid-area: pdi__cantidad;
+  }
+
+  /* .producto__info p {
+    font-size: 1.5rem;
+  }
+  .producto__descripcion {
+    display: flex;
+    align-items: center;
+  }
+  .producto__titulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .producto__titulos p {
+    padding: 0 0.5rem;
+  }
+  .producto__detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  } */
+  .producto__detalle p {
+    padding: 0 0.5rem;
+  }
+  .pedido__foto {
+    width: 15%;
+  }
+  .pedido__foto img {
+    width: 100%;
+  }
+}
+/* Comienza estilo para Desktop */
+@media screen and (min-width: 1024px) {
+  p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+  }
+  /* centrar al medio header, section y footer PC */
+  .centrado {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  /* estilo FOOTER PC */
+  .newsletter {
+    justify-content: center;
+  }
+  .newsletter__suscribirse {
+    width: 45%;
+    margin: 0 1rem;
+  }
+  /* estilo INDEX PC */
+  .tituloSeccion p {
+    font-weight: 300;
+    font-size: 7rem;
+  }
+  /* estilo Hombre, Mujer, CHicos, PROMO PC */
+  .fila {
+    flex-flow: row nowrap;
+    min-width: 720px;
+    max-width: 1024px;
+    margin: auto;
+  }
+  /* estilo COBERTURA Y COMO COMPRAR PC */
+  .cobertura__mapa {
+    height: 20rem;
+  }
+  .comprar__video {
+    height: 20rem;
+  }
+  .gridComprar {
+    padding-top: 1rem;
+  }
+  /* Estilo CONTACTO PC */
+  .formContenedor {
+    width: 65%;
+    margin-top: 0.5rem;
+  }
+}
